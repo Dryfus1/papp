@@ -14,19 +14,7 @@
       "reports": [
       ]
     },
-    "dort": {
-    // "dort": {
-    //   "balance": 0,
-    //   "image": "./images/dort.jpg",
-    //   "name": "Dortal",
-    //   "reports": []
-    // },
-    // "eladh": {
-    //   "balance": 0,
-    //   "image": "./images/eladh.jpg",
-    //   "name": "Neshek",
-    //   "reports": []
-    // },
+    
     "amith": {
       "balance": 0,
       "image": "./images/dort.jpg",
