@@ -21,7 +21,7 @@ var s3 = new AWS.S3();
 var dataUsers
 var mainImg 
 
-var getData = function(page, callback){
+/* var getData = function(page, callback){
 	s3.getObject({Bucket: 'pappdata', Key: 'data_papp.json'}, function(err, fileContent) {
 		if (err) console.log(err, err.stack); // an error occurred
 		else {
@@ -36,6 +36,7 @@ var getData = function(page, callback){
 }
 
 getData('');
+*/
 
 router.get('/', function(req, res, next) {
 
@@ -45,7 +46,7 @@ router.get('/', function(req, res, next) {
 	var teamBalance = 0;
 	var teamReports = [];
 
-
+/*
 // Calculate teams balance
 	function getTeamBal() {
 		var keys = Object.keys(dataUsers.users);
@@ -57,7 +58,9 @@ router.get('/', function(req, res, next) {
 	};
 
 	getTeamBal();
-
+*/
+	
+/*	
 // Last reports
 	function lastReports() {
 		var keys = Object.keys(dataUsers.users);
@@ -98,7 +101,7 @@ router.get('/', function(req, res, next) {
 
 	getData('', getTeamBal)
 	lastReports()
-
+*/
 	console.log('the cookie is ' + req.cookies.user)
 
 	var page
@@ -129,7 +132,7 @@ router.get('/', function(req, res, next) {
 
 /* GET report */
 router.get('/report', function(req, res, next) {
-
+/*
 	var calBal = function(page) {
 		var date = new Date();
 		var timestamp = date.getTime();
@@ -143,11 +146,11 @@ router.get('/report', function(req, res, next) {
 
 		dataUsers.users[userName].balance = newBal
 		dataUsers.users[userName].reports.push({timestamp,report})
-
-		let data = JSON.stringify(dataUsers);  
+*/
+		//let data = JSON.stringify(dataUsers);  
 
 		// fs.writeFileSync('./data_papp.json', data);
-
+/*
 		s3.putObject({Bucket: 'pappdata', Key: 'data_papp.json', Body: data}, function(err, data) {
 
 	       if (err) {
@@ -170,7 +173,7 @@ router.get('/report', function(req, res, next) {
 	getData('success',calBal)
 
 });
-
+*/
 /* GET success page */
 router.get('/success', function(req, res, next) {
 	res.render('success', {
