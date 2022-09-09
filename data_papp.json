@@ -17,8 +17,7 @@
     
     "amith": {
       "balance": 0,
-      "image": "./images/dort.jpg",
-      "name": "Dortal",
+     
       "image": "./images/amith.jpg",
       "name": "Amit",
       "reports": []
@@ -28,8 +27,7 @@
       "balance": 0,
       "image": "./images/eladh.jpg",
       "name": "Neshek",
-      "image": "./images/ronenc.jpg",
-      "name": "Ronen",
+      
       "reports": []
     },
     "liorg": {
